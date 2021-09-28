@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CRUD</title>
+        <link rel="stylesheet" href="main.css">
+       
+    </head>
+    <body>
+        <h1 class="heading">CRUD DATABASE</h1>
+       <table>
+           <tr>
+               <td>
+                   <form autocomplete="off" onsubmit="onFormSubmit()">
+                       <div>
+                            <label for="user_name">Name</label>
+                            <input type="text" name="user_name" id="user_name">
+                       </div>
+                       <div>
+                            <label for="user_age">Age</label>
+                            <input type="number" name=user_age  id="user_age">
+                       </div>
+                       <div>
+                            <label for="user_gender">Gender</label>
+                            <input type="radio" name="Gender" class="Male" value="Male">
+                            <label for="Male">Male</label>
+                            <input type="radio" name="Gender" class="Female" value="Female">
+                            <label for="Female">Female</label>
+                            
+                       </div>
+                       <div>
+                           <br>
+                            <label for="hobby">Hobby</label>
+                            <input list="browsers" name="hobby" id="hobby">
+                            <datalist id="browsers">
+                              <option value="Playing">
+                              <option value="Art">
+                              <option value="Singing">
+                              <option value="Music Listening">
+                              <option value="Reading">
+                            </datalist>
+                       </div>
+                       <div class="action_button">
+                           <input type="submit" value="Submit" class="submit-button">
+                           <input type="reset" value="Reset" class="reset-button">
+                       </div>
+                   </form>
+                       <td>
+                           <table class="list" id="category">
+                               <thead>
+                                   <tr>
+                                       <th>Name</th>
+                                       <th>Age</th>
+                                       <th>Gender</th>
+                                       <th>Hobby</th>
+                                   </tr>
+                               </thead>
+                               <tbody>
+
+                               </tbody>
+                           </table>
+                       </td>
+               </td>
+           </tr>
+       </table>
+       <script src="./app.js"></script>
+    </body>
+</html>
