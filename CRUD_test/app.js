@@ -48,7 +48,6 @@ function edit(edit_data){
     row_select = edit_data.parentElement.parentElement;
     document.getElementById("user_name").value = row_select.cells[0].innerHTML;
     document.getElementById("user_age").value = row_select.cells[1].innerHTML;
-    // document.getElementsByClassName("user_gender").value = row_select.cells[2].innerHTML;
     var Gender = row_select.cells[2].innerHTML;
     if(Gender== "Male"){
         document.getElementById('Male').checked = true;
