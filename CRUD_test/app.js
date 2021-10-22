@@ -3,7 +3,7 @@ function onFormSubmit(e){
     event.preventDefault();
     var data = read_data();
      var validate =name_validate();
-     if(validate==true){
+     if(validate==1){
         document.getElementById('namevalidate').innerText = '';
     if(row_select === null) {
       data_insert(data);
@@ -71,7 +71,7 @@ function update(data){
 
 function deleting(delete_data){
  if(confirm('Delete!')){
-     row = delete_data.parentElement.parentElement;
+    var row = delete_data.parentElement.parentElement;
      document.getElementById('category').deleteRow(row.rowIndex);
      document.getElementById('Male').checked=false;
      document.getElementById('Female').checked=false;
