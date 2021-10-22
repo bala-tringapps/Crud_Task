@@ -7,8 +7,8 @@
     </head>
     <body>
         <h1 class="heading">CRUD DATABASE</h1>
-       <table>
-           <th class = crud_title >CRUD</th>
+       <table scope = table>
+           <th scope = col class = crud_title >CRUD</th>
            <tr>
                <td>
                    <p class="insert_data_title">Student Data Form Entry</p>
@@ -48,15 +48,15 @@
                        </div>
                    </form>
                        <td>
-                           <table class="list" id="category">
+                           <table scope = table  class="list" id="category">
                                <thead>
-                                   <tr><th class = Info colspan="5">Personal Information</th></tr>
+                                   <tr><th scope = row class = Info colspan="5">Personal Information</th></tr>
                                    <tr>
-                                       <th class= column_name>Name</th>
-                                       <th class = column_age>Age</th>
-                                       <th class = column_gender>Gender</th>
-                                       <th class = column_hobby>Hobby</th>
-                                       <th class = column_action>Action</th>
+                                       <th scope= col >Name</th>
+                                       <th scope= col >Age</th>
+                                       <th scope= col >Gender</th>
+                                       <th scope= col >Hobby</th>
+                                       <th scope= col >Action</th>
                                    </tr>
                                </thead>
                                <tbody>
