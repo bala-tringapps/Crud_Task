@@ -92,7 +92,7 @@ console.log(temp);
 var submit = document.getElementById('submit_btn');
 submit.addEventListener("click",function(){
     let check = name_validate();
-    if(check == false){
+    if(check !== true){
     document.getElementById('namevalidate').innerText = 'Name is required';
     
     reset();
@@ -104,7 +104,7 @@ submit.addEventListener("click",function(){
 
 function name_validate(){
         var name_input = document.getElementById('user_name').value;
-        var name_value = true;
+        var name_value;
         if(name_input !== ""){
             name_value = true
             
