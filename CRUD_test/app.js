@@ -1,6 +1,6 @@
 var row_select = null;
-function onFormSubmit(e){
-    event.preventDefault();
+function onFormSubmit(){
+    
     var data = read_data();
      var validate =name_validate();
      if(validate==1){
