@@ -13,7 +13,7 @@
            <tr>
                <td>
                    <p class="insert_data_title">Student Data Form Entry</p>
-                   <form autocomplete="off" onsubmit="onFormSubmit()">
+                   <form autocomplete="off" onsubmit="event.preventDefault();onFormSubmit()">
                        <div>
                             <label for="user_name">Name</label>
                             <label for="namevalidate" id="namevalidate"></label>
